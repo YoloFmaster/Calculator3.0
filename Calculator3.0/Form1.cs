@@ -52,8 +52,6 @@ namespace Calculator3._0
         private void Equals(object sender, EventArgs e)
         {
             double Total = 0.0;
-            num1 = Double.Parse(txtOutput.Text);
-            Znak = txtOutput.Text;
             num2 = Double.Parse(txtOutput.Text);
             if (Znak == "+") Total = num1 + num2;
             if (Znak == "-") Total = num1 - num2;
@@ -61,7 +59,7 @@ namespace Calculator3._0
             if (Znak == "/") Total = num1 / num2;
             Znak = null;
             txtOutput.Text = Total.ToString();
-            num1 = Total;
+            num2 = Total;
             startEnter = true;
         }
         private void btnClear_Click(object sender, EventArgs e)
