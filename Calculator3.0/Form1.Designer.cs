@@ -100,7 +100,7 @@
             this.btnMinus.TabIndex = 4;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
-            this.btnMinus.Click += new System.EventHandler(this.Number);
+            this.btnMinus.Click += new System.EventHandler(this.Operation);
             // 
             // btn7
             // 
@@ -177,7 +177,7 @@
             this.btnMultiply.TabIndex = 11;
             this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
-            this.btnMultiply.Click += new System.EventHandler(this.Number);
+            this.btnMultiply.Click += new System.EventHandler(this.Operation);
             // 
             // btnDivided
             // 
@@ -188,7 +188,7 @@
             this.btnDivided.TabIndex = 12;
             this.btnDivided.Text = "/";
             this.btnDivided.UseVisualStyleBackColor = true;
-            this.btnDivided.Click += new System.EventHandler(this.Number);
+            this.btnDivided.Click += new System.EventHandler(this.Operation);
             // 
             // btnPlus
             // 
@@ -199,7 +199,7 @@
             this.btnPlus.TabIndex = 13;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
-            this.btnPlus.Click += new System.EventHandler(this.Number);
+            this.btnPlus.Click += new System.EventHandler(this.Operation);
             // 
             // btnEquals
             // 

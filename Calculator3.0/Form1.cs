@@ -2,10 +2,11 @@ namespace Calculator3._0
 {
     public partial class Form1 : Form
     {
+        string Znak = "";
         double num1;
         double num2;
         bool startEnter = true;
-        string Znak;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,11 +21,6 @@ namespace Calculator3._0
             btn0.Text = "0"; btnEquals.Text = "="; btnPlus.Text = "+";
             btnMinus.Text = "-"; btnMultiply.Text = "*"; btnDivided.Text = "/";
             btnClear.Text = "Clear";
-        }
-
-        private void btn_Click(object sender, EventArgs e)
-        {
-            var button = (Button)sender;
         }
 
         private void Number(object sender, EventArgs e)
@@ -52,8 +48,6 @@ namespace Calculator3._0
         private void Equals(object sender, EventArgs e)
         {
             double Total = 0.0;
-            num1 = Double.Parse(txtOutput.Text);
-            Znak = txtOutput.Text;
             num2 = Double.Parse(txtOutput.Text);
             if (Znak == "+") Total = num1 + num2;
             if (Znak == "-") Total = num1 - num2;
@@ -61,7 +55,7 @@ namespace Calculator3._0
             if (Znak == "/") Total = num1 / num2;
             Znak = null;
             txtOutput.Text = Total.ToString();
-            num1 = Total;
+            num2 = Total;
             startEnter = true;
         }
         private void btnClear_Click(object sender, EventArgs e)
